@@ -13,7 +13,7 @@ public class Posetilac : IEntity, ICsvRecord {
     public int AdresaId { get; set; }
     public string Telefon { get; set; } = "";
     public string Email { get; set; } = "";
-    public string BrojClanskeKarte { get; set; } = ""; // npr. CK-1-2023
+    public string BrojClanskeKarte { get; set; } = "";
     public int GodinaClanstva { get; set; }
     public StatusPosetioca Status { get; set; }
     public double ProsecnaOcena { get; set; }

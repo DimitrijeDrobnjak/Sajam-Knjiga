@@ -9,7 +9,7 @@ public class Kupovina : IEntity, ICsvRecord {
     public int PosetilacId { get; set; }
     public int KnjigaId { get; set; }
     public DateTime DatumKupovine { get; set; }
-    public int Ocena { get; set; } // 1-5
+    public int Ocena { get; set; }
     public string Komentar { get; set; } = "";
 
     public string[] ToFields() => new[] {

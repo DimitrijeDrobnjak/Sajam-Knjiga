@@ -8,7 +8,7 @@ public class Izdavac : IEntity, ICsvRecord {
     public int Id { get; set; }
     public string Sifra { get; set; } = "";
     public string Naziv { get; set; } = "";
-    public int SefId { get; set; } // autor sa >= 5 godina iskustva
+    public int SefId { get; set; } // autor koji ima vise od 5 god iskustva
     public List<int> AutorIds { get; set; } = new List<int>();
     public List<int> KnjigaIds { get; set; } = new List<int>();
 
