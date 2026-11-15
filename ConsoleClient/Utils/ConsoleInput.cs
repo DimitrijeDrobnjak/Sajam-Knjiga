@@ -8,7 +8,7 @@ namespace ConsoleClient.Utils;
 
 // Ako je prosledjena trenutna vrednost (izmena), Enter je zadrzava.
 public static class ConsoleInput {
-    private static readonly string[] DatumFormati = { "d.M.yyyy", "d.M.yyyy.", "dd.MM.yyyy", "dd.MM.yyyy." };
+    private static readonly string[] DatumFormati = { "D.M.YYYY", "D.M.YYYY.", "DD.MM.YYYY", "DD.MM.YYYY." };
 
     public static string ReadString(string prompt, string? current = null) {
         while (true) {
