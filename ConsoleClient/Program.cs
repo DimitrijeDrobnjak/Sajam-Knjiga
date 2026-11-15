@@ -36,7 +36,6 @@ public static class Program {
             Console.WriteLine("1. Posetioci");
             Console.WriteLine("2. Kupovine");
             Console.WriteLine("3. Izdavaci");
-            Console.WriteLine("9. [TEST] Ubaci probne autore i knjige");
             Console.WriteLine("0. Izlaz");
 
             string izbor = ConsoleInput.ReadString("Izbor");
@@ -44,7 +43,6 @@ public static class Program {
                 case "1": posetilacController.Meni(); break;
                 case "2": kupovinaController.Meni(); break;
                 case "3": izdavacController.Meni(); break;
-                case "9": TestPodaci.Ubaci(adrese, autori, knjige); break;
                 case "0": return;
                 default: Console.WriteLine("Nepoznata opcija."); break;
             }

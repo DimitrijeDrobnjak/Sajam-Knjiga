@@ -65,7 +65,7 @@ public class KupovinaController {
             throw new ValidacijaException("Nema posetilaca. Prvo dodajte posetioca.");
         List<Knjiga> knjige = _service.GetKnjige();
         if (knjige.Count == 0)
-            throw new ValidacijaException("Nema knjiga u sistemu (njih dodaje kolega ili opcija 9 u glavnom meniju).");
+            throw new ValidacijaException("Nema knjiga u sistemu (njih dodaje kolega).");
 
         Console.WriteLine("Posetioci:");
         ConsoleTable.Print(

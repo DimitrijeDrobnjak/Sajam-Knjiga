@@ -72,7 +72,7 @@ public class IzdavacController {
     private void Dodavanje() {
         Console.WriteLine("\n--- Dodavanje izdavaca ---");
         if (_service.GetAutori().Count == 0)
-            throw new ValidacijaException("Nema autora u sistemu, pa ne moze da se odredi sef (njih dodaje kolega ili opcija 9 u glavnom meniju).");
+            throw new ValidacijaException("Nema autora u sistemu, pa ne moze da se odredi sef (njih dodaje kolega).");
 
         PrikaziAutoreIKnjige();
         Console.WriteLine("Sef mora biti autor sa najmanje 5 godina iskustva. Sef se automatski dodaje i u listu autora.");
