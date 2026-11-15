@@ -1,8 +1,6 @@
-namespace Core.Models
-{
-    public enum StatusPosetioca
-    {
-        Redovan, // "R"
-        VIP      // "V"
-    }
+namespace Core.Models;
+
+public enum StatusPosetioca {
+    Redovan, // "R"
+    VIP      // "V"
 }
