@@ -3,7 +3,7 @@ OISISI 2026/2027 - informacioni sistem uprave sajma knjiga (C#, WPF, MVC)
 
 TIM
 Student 1: Dimitrije Drobnjak RA119/2024
-Student 2: 
+Student 2: Bogdan Ilijev RA186/2024
 
 STRUKTURA RESENJA
 SajamKnjiga.slnx
@@ -33,5 +33,9 @@ Student 1 - Dimitrije Drobnjak (#posetilac, #kupovina, #izdavac)
 - Kontroleri i konzolni ispis: PosetilacController, KupovinaController, IzdavacController, ConsoleInput, ConsoleTable, glavni meni
 - Funkcionalnosti 8.1-8.4 (dodavanje, izmena, brisanje, prikaz) za posetioce, kupovine i izdavace
 
-Student 2 - [ime i prezime kolege] (#autor, #knjiga, #adresa)
-- (kolega upisuje sta je uradio)
+Student 2 - Bogdan Ilijev (#autor, #knjiga, #adresa)
+- Modeli: Autor (podaci o autoru i godine iskustva), Knjiga (ISBN, žanr, cena, izdavač), Adresa (ulica, broj, mesto i poštanski broj)
+- DAO sloj: AutorDao, KnjigaDao, AdresaDao
+- Servisi: AutorService, KnjigaService, AdresaService (validacija podataka, jedinstvenost i provera postojanja povezanih entiteta)
+- Kontroleri i ispis u konzoli: AutorController, KnjigaController, AdresaController
+- Funkcionalnosti 8.1–8.4 (dodavanje, izmena, brisanje i prikaz) za autore, knjige i adrese
